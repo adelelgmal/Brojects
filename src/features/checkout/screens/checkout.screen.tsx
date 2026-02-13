@@ -68,7 +68,7 @@ export default function CheckoutScreen() {
           dispatch(clearCart())
           reset();
           setTimeout(() => {
-            router.push("/order");
+            router.push("/");
           }, 3000);
         }
       } else {
@@ -193,7 +193,7 @@ export default function CheckoutScreen() {
                 <div className="flex justify-between items-center pt-2">
                   <span className="text-lg font-bold text-gray-900">Total</span>
                   <span className="text-2xl font-bold text-primary-600">
-                    600 EGP
+                    
                   </span>
                 </div>
               </div>

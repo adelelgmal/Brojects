@@ -29,7 +29,7 @@ export default async function OurCategories() {
         {response.data.map((category) => (
           <Link
             key={category._id}
-            href={`/categories/${category._id}`}
+            href={``}
             className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300"
           >
             <div>

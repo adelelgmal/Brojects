@@ -136,7 +136,7 @@ const [count,setCount]=useState(1)
           </div>
 
           {/* Action Buttons */}
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             <button className="flex-1 px-8 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition flex items-center justify-center gap-2">
               <span>🛒</span>
               Add to Cart
@@ -145,7 +145,7 @@ const [count,setCount]=useState(1)
               <span>🛒</span>
               Buy Now
             </button>
-          </div>
+          </div> */}
 
           {/* Wishlist Button */}
           
