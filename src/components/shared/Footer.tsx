@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <h2 className="text-2xl font-bold text-green-500 mb-4">Smart Delivery</h2>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              FreshCart is your go-to online marketplace for fresh and organic groceries, delivering quality products right to your doorstep.
+              Smart Delivery is your go-to online marketplace for fresh and organic groceries, delivering quality products right to your doorstep.
             </p>
             <ul className="flex gap-3">
               <li>
@@ -79,7 +79,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 pt-6">
           <p className="text-center text-gray-500 text-sm">
-            © 2026 FreshCart. All rights reserved.
+            © 2026 Smart Delivery. All rights reserved.
           </p>
         </div>
       </div>

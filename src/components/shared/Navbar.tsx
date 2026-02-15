@@ -136,7 +136,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/wishlist"
-                className="flex items-center gap-2 text-gray-700 hover:text-emerald-600 transition-colors"
+                className="flex items-center gap-2 text-gray-700 hover:text-emerald-600 transition-colors hidden"
               >
                 <FontAwesomeIcon icon={faHeart} className="w-5 h-5" />
                 <span className="hidden sm:inline">Wishlist</span>
