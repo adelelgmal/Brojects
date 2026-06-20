@@ -33,11 +33,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { authReducer, AuthState } from "./auth.slice";
 import { cartReducer, CartState } from "@/features/cart/store/cart.slice";
+import { lockersReducer, LockersState } from "@/features/lockers/store/lockers.slice";
 import { useDispatch, useSelector, TypedUseSelectorHook } from "react-redux";
 
 export type PreloadedState = {
   auth: AuthState;
   cart: CartState;
+  lockers: LockersState;
 };
 
 export function creatStore(preloadedState: PreloadedState) {
@@ -45,6 +47,7 @@ export function creatStore(preloadedState: PreloadedState) {
     reducer: {
       auth: authReducer,
       cart: cartReducer,
+      lockers: lockersReducer,
     },
     preloadedState,
   });

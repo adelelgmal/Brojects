@@ -12,6 +12,7 @@ import { verify } from "crypto";
 import { vertifyToken } from "@/features/auth/server/auth.actions";
 import { getLoggedUserCart } from "@/features/cart/server/cart.actions";
 import { CartState } from "@/features/cart/store/cart.slice";
+import { LockersState } from "@/features/lockers/store/lockers.slice";
 
 const exo = Exo({
   subsets: ["latin"],
@@ -28,6 +29,15 @@ const defaultCartState: CartState = {
   products: [],
   error: null,
   isLoading: false,
+};
+
+const defaultLockersState: LockersState = {
+  lockers: [
+    { id: 1, status: "full", orderId: null },
+    { id: 2, status: "empty", orderId: null },
+    { id: 3, status: "empty", orderId: null },
+  ],
+  lastAssignedLockerId: null,
 };
 
 export default async function layout({ children }: { children: ReactNode }) {
@@ -57,7 +67,7 @@ export default async function layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${exo.className} font-medium`}>
-        <Providers preloadedState={{ auth: authValues, cart: cartState }}>
+        <Providers preloadedState={{ auth: authValues, cart: cartState, lockers: defaultLockersState }}>
           <Navbar />
           {children}
 
